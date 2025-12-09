@@ -1,0 +1,44 @@
+
+body {
+    background: radial-gradient(circle at top, #0d1117, #000000);
+    color: #e6e6e6;
+}
+
+h1, h5 {
+    color: #7ea0ff; /* azul neon suave */
+}
+
+p.lead {
+    color: #c9d1d9;
+}
+
+hr {
+    border-color: #30363d;
+}
+
+/* Cards Tech */
+.tech-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: #7ea0ff;
+    box-shadow: 0px 0px 20px rgba(126, 160, 255, 0.3);
+}
+
+.btn-tech {
+    background: #7ea0ff;
+    border: none;
+    color: #0d1117;
+    font-weight: bold;
+}
+
+.btn-tech:hover {
+    background: #5d82ff;
+    color: white;
+}

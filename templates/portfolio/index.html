@@ -1,0 +1,87 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Início - Meu Portfólio{% endblock %}
+
+{% block content %}
+
+<style>
+    /* Fundo com gradiente tecnológico */
+    body {
+        background: radial-gradient(circle at top, #0d1117, #000000);
+        color: #e6e6e6;
+    }
+
+    h1, h5 {
+        color: #7ea0ff; /* azul neon suave */
+    }
+
+    p.lead {
+        color: #c9d1d9;
+    }
+
+    hr {
+        border-color: #30363d;
+    }
+
+    /* Cards Tech */
+    .tech-card {
+        background: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .tech-card:hover {
+        transform: translateY(-5px);
+        border-color: #7ea0ff;
+        box-shadow: 0px 0px 20px rgba(126, 160, 255, 0.3);
+    }
+
+    .btn-tech {
+        background: #7ea0ff;
+        border: none;
+        color: #0d1117;
+        font-weight: bold;
+    }
+
+    .btn-tech:hover {
+        background: #5d82ff;
+        color: white;
+    }
+</style>
+
+<div class="text-center mt-5">
+    <h1 class="fw-bold">Olá, eu sou o Igor!</h1>
+    <p class="lead">Desenvolvedor Python & Backend</p>
+
+    <a href="/projetos" class="btn btn-tech btn-lg mt-3">Ver meus projetos</a>
+</div>
+
+<hr class="my-5">
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="tech-card text-center">
+            <h5>🐍 Python</h5>
+            <p>APIs, automação, análise de dados e Django.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="tech-card text-center">
+            <h5>🖥️ Django</h5>
+            <p>Back-end sólido, sistemas escaláveis e autenticação JWT.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="tech-card text-center">
+            <h5>🗄️ Banco de Dados</h5>
+            <p>PostgreSQL, SQLite, modelagem e consultas complexas.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
