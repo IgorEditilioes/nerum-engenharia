@@ -1,0 +1,11 @@
+Olá {{ nome }},
+
+Recebemos sua solicitação de orçamento! Em breve entraremos em contato.
+
+Seu telefone informado: {{ telefone }}
+
+Sua mensagem foi:
+{{ mensagem }}
+
+Atenciosamente,
+Nerum Engenharia

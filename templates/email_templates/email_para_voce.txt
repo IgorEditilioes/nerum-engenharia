@@ -1,0 +1,8 @@
+Novo orçamento recebido!
+
+Nome: {{ nome }}
+E-mail: {{ email_cliente }}
+Telefone: {{ telefone }}
+
+Mensagem:
+{{ mensagem }}
