@@ -1,9 +1,14 @@
 from django.contrib import admin
-from .models import Projeto
+from .models import Projeto, ProjetoImagens
+
+class ProjetoImagemInline(admin.TabularInline):
+    model = ProjetoImagens
+    extra = 1
+
 
 # Register your models here.
 @admin.register(Projeto)
 class ProjetoAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'data_criacao')
+    list_display = ('titulo',)
     search_fields = ('titulo',)
-    list_filter = ('data_criacao',)
+    inlines = [ProjetoImagemInline]

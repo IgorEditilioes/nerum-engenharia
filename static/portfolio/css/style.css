@@ -1,44 +1,117 @@
-
-body {
-    background: radial-gradient(circle at top, #0d1117, #000000);
-    color: #e6e6e6;
+/* Cores principais */
+:root {
+    --cor-primaria: #0057A3;
+    --cor-secundaria: #0097D7;
+    --cor-escura: #00385F; /* azul escuro bonito */
 }
 
-h1, h5 {
-    color: #7ea0ff; /* azul neon suave */
+/* Navbar */
+.navbar {
+    background-color: var(--cor-primaria);
+}
+.sombra-navbar {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-p.lead {
-    color: #c9d1d9;
+/* HERO */
+.hero {
+    height: 60vh;
+    background: url("/media/hero/hero.png") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-hr {
-    border-color: #30363d;
+/* Overlay leve */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
 }
 
-/* Cards Tech */
-.tech-card {
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 12px;
-    padding: 20px;
-    transition: 0.3s;
-}
-
-.tech-card:hover {
-    transform: translateY(-5px);
-    border-color: #7ea0ff;
-    box-shadow: 0px 0px 20px rgba(126, 160, 255, 0.3);
-}
-
-.btn-tech {
-    background: #7ea0ff;
-    border: none;
-    color: #0d1117;
-    font-weight: bold;
-}
-
-.btn-tech:hover {
-    background: #5d82ff;
+/* Conteúdo acima do overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
     color: white;
+}
+
+.titulo-principal {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.subtitulo-principal {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Serviços */
+.card-servico {
+    border: none;
+    border-left: 5px solid var(--cor-secundaria);
+    transition: transform .2s;
+}
+
+.card-servico:hover {
+    transform: scale(1.04);
+}
+
+/* Títulos */
+.titulo-secao {
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+/* ============================
+   PROJETOS – FUNDO AZUL ESCURO
+   ============================ */
+#projetos {
+    background: var(--cor-escura);
+    color: white;
+    padding: 60px 0;
+}
+
+/* Cards continuam brancos e elegantes */
+#projetos .card {
+    background: white;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+/* Hover profissional */
+#projetos .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Ajusta o título da seção dentro do fundo escuro */
+#projetos .titulo-secao {
+    color: white !important;
+}
+
+/* Contato */
+.contato {
+    padding: 60px 0;
+    background: var(--cor-escura);
+    color: white;
+}
+
+.form-contato input,
+.form-contato textarea {
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+    background: var(--cor-primaria);
+    color: white;
+    padding: 12px;
+    margin-top: 40px;
 }
