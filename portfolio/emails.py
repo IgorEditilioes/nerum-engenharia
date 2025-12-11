@@ -23,7 +23,7 @@ def enviar_emails_orcamento(nome, email_cliente, telefone, mensagem):
         subject=f"Novo orçamento enviado por {nome}",
         message=email_para_voce,
         from_email=None,  # usa DEFAULT_FROM_EMAIL
-        recipient_list=['seuemail@gmail.com'],  # <<< ALTERE PARA SEU E-MAIL
+        recipient_list=['igorediti@gmail.com'], 
     )
 
     # -----------------------------------
