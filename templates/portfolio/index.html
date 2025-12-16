@@ -63,7 +63,7 @@
         <div class="col-md-4">
             <a href="{% url 'projeto_detail' projeto.pk %}" class="text-decoration-none text-dark">
                 <div class="card shadow-sm">
-                    <img src="{{ projeto.imagem_principal.url }}" class="card-img-top">
+                    <img src="{{ projeto.imagem_principal.url }}" alt="{{ projeto.titulo }}">
 
                     <div class="card-body">
                         <h5 class="card-title">{{ projeto.titulo }}</h5>
@@ -84,7 +84,7 @@
 
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-                <img src="/media/perfil/perfil.jpeg" class="img-fluid rounded-circle shadow-sm mb-3" alt="Foto do Engenheiro">
+                <img src="https://res.cloudinary.com/djkj63p3c/image/upload/v1765906815/perfil_edvuix.jpg" class="img-fluid rounded-circle shadow-sm mb-3" alt="Foto do Engenheiro">
 
                 <!-- Ícones sociais -->
                 <div class="mt-3">
