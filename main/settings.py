@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 # ===============================
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv()
+# load_dotenv()
 
 # ===============================
 # SECURITY
@@ -156,3 +156,8 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # DEFAULT PK
 # ===============================
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+print("EMAIL_HOST:", os.getenv("EMAIL_HOST"))
+print("EMAIL_HOST_USER:", os.getenv("EMAIL_HOST_USER"))
+print("EMAIL_HOST_PASSWORD:", os.getenv("EMAIL_HOST_PASSWORD"))
