@@ -11,10 +11,8 @@
 
     <h3 class="mt-4">Galeria do Projeto</h3>
     <div class="row g-3">
-        {% for img in projeto.imagens.all %}
-        <div class="col-md-4">
-            <img src="{{ img.imagem.url }}" class="img-fluid rounded shadow-sm">
-        </div>
+        {% for imagem in projeto.imagens.all %}
+            <img src="{{ imagem.imagem.url }}" alt="Imagem do projeto">
         {% endfor %}
     </div>
 
